@@ -1,8 +1,9 @@
+import Myself from "./Nodes/Myself"
 
 const Beginning = ({setter}) => {
 
     const handleOne = () => {
-        setter(<p>one</p>)
+        setter(<Myself setter={setter}/>)
     }
     const handleTwo = () => {
         setter(<p>two</p>)
@@ -10,10 +11,11 @@ const Beginning = ({setter}) => {
 
     return (
         <div>
-            <p>Beginning</p>
-            <p>To play this game, simply follow the instructions.</p>
-            <button onClick = {handleOne}>Hi</button>
-            <button onClick={handleTwo}>Bye</button>
+            <p>Welcome to Blamer! If you've got someone to blame for something, this is the place to be!</p>
+            <textarea placeholder="Why are you blaming? Type here."></textarea>
+            <p>Who are you blaming for this?</p>
+            <button onClick = {handleOne}>Myself</button>
+            <button onClick={handleTwo}>Others</button>
         </div>
     )
 }
