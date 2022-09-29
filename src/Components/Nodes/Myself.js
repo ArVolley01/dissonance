@@ -1,4 +1,5 @@
 import NoNeed from "./Noneed"
+import YesNeed from "./YesNeed"
 
 const Myself = ({ setter }) => {
 
@@ -6,7 +7,7 @@ const Myself = ({ setter }) => {
         setter(<NoNeed setter={setter} />)
     }
     const handleTwo = () => {
-        setter(<p>two</p>)
+        setter(<YesNeed setter = {setter} />)
     }
 
     return (

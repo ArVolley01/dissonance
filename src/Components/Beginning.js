@@ -5,9 +5,6 @@ const Beginning = ({setter}) => {
     const handleOne = () => {
         setter(<Myself setter={setter}/>)
     }
-    const handleTwo = () => {
-        setter(<p>two</p>)
-    }
 
     return (
         <div>
@@ -15,7 +12,7 @@ const Beginning = ({setter}) => {
             <textarea placeholder="Why are you blaming? Type here."></textarea>
             <p>Who are you blaming for this?</p>
             <button onClick = {handleOne}>Myself</button>
-            <button onClick={handleTwo}>Others</button>
+            <button>Others [Locked]</button>
         </div>
     )
 }
