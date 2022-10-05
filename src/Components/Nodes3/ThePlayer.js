@@ -10,7 +10,7 @@ const ThePlayer = ({ setter, code }) => {
         setter(<PuzzleThree setter={setter} code={""} />)
     }
     const handleThree = () => {
-        if (code === "2") {
+        if (code === "2218") {
             setter(<PieceThree setter={setter} code={""} />)
         } else {
             setter(<PuzzleThree setter={setter} code={code} />)

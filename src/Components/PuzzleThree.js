@@ -14,8 +14,8 @@ const PuzzleThree = ({ setter, code }) => {
 
     return (
         <div>
-            <p>Wecome to Blamer! If youve got someoe to blamefor something t his isnt the placeto be! {code}</p>
-            <textarea placeholder="Help can be found in the most mysterious of places. Not here." value="I keep messing up Blamer" readOnly></textarea>
+            <p>Welcome two Blamer, the best social network! If you've got someone to blame, don't weight! Blame now!</p>
+            <textarea placeholder={"Help can be found in the most mysterious of places. Not here though. Unless...? " + code} value="I keep messing up Blamer" readOnly></textarea>
             <p>Who to blame? That's right, blame yourself. This is all your fault.</p>
             <button onClick={handleOne}>The Player</button>
             <button onClick={handleTwo}>The Game</button>
