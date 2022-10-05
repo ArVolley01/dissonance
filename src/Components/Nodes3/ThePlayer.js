@@ -1,17 +1,14 @@
 import PuzzleThree from "../PuzzleThree"
-import PieceThree from "./PieceThree"
+import TheEnd from "./TheEnd"
 
 const ThePlayer = ({ setter, code }) => {
 
     const handleOne = (num) => {
         setter(<PuzzleThree setter={setter} code={code + num} />)
     }
-    const handleTwo = () => {
-        setter(<PuzzleThree setter={setter} code={""} />)
-    }
     const handleThree = () => {
         if (code === "2218") {
-            setter(<PieceThree setter={setter} code={""} />)
+            setter(<TheEnd setter={setter} code={""} />)
         } else {
             setter(<PuzzleThree setter={setter} code={code} />)
         }
@@ -20,7 +17,6 @@ const ThePlayer = ({ setter, code }) => {
     return (
         <div>
             <p>Honestly, I'm not sure why you don't just give up.</p>
-            <button id="clear" onClick={handleTwo}>I'll give up for now.</button>
             <button id="1" onClick={() => handleOne("1")}>I can't give up.</button>
             <button id="4" onClick={() => handleOne("4")}>I don't want to let you win.</button>
             <button id="7" onClick={() => handleOne("7")}>I'm better than that.</button>

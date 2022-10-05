@@ -1,21 +1,18 @@
 import PuzzleThree from "../PuzzleThree"
 
-const ThePlayer = ({ setter, code }) => {
+const TheGame = ({ setter, code }) => {
 
     const handleOne = (num) => {
-        setter(<PuzzleThree setter={setter} code={code + num} />)
-    }
-    const handleTwo = () => {
         setter(<PuzzleThree setter={setter} code={""} />)
     }
 
     return (
         <div>
-            <p>Honestly, I'm not sure why you don't just give up.</p>
-            <button id="clear" onClick={handleTwo}>I'll give up for now.</button>
-            <button id="1" onClick={() => handleOne("1")}>I can't give up.</button>
+            <p>You can't blame the game. That would be petty and childish and foolish and dumb. Unless you messed up, I suppose.</p>
+            <button onClick={handleOne}>Then what?</button>
+            <button onClick={handleOne}>Why is this here... ?</button>
         </div>
     )
 }
 
-export default ThePlayer;
+export default TheGame;

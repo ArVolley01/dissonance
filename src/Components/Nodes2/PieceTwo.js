@@ -7,18 +7,18 @@ const PieceTwo = ({ setter }) => {
         setter(<PuzzleTwo setter={setter} />)
     }
     const handleTwo = () => {
-        const b = document.getElementById("sorry")
+        const b = document.getElementById("myButton")
 
-        if (b.textContent === "sorry") {
+        if (b.textContent.includes("I win")) {
             setter (<PuzzleThree setter={setter} />)
         }
     }
 
     return (
-        <div>
-            <p>You think you're clever? You think you're cool? I'll let you out if you say sorry.</p>
+        <div className="action">
+            <p>So, you can follow directions. Okay then, why don't you click my button that says "I win", if you're so smart?</p>
             <button onClick={handleOne}>I give up.</button>
-            <button id="sorry" onClick={handleTwo}>If only this button said "sorry".</button>
+            <button id="myButton" onClick={handleTwo}>I lose!</button>
         </div>
     )
 }

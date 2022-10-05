@@ -14,7 +14,7 @@ const WhoExactly = ({ setter }) => {
     }
 
     return (
-        <div>
+        <div className="trivial">
             <p>You have to blame someone. But who?</p>
             <form onSubmit={handleSubmit}>
                 <input autoComplete="off" name="input" type="text" placeholder="Who to blame?"></input>

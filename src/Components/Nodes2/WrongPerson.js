@@ -10,7 +10,7 @@ const WrongPerson = ({ setter, person }) => {
     }
 
     return (
-        <div>
+        <div className="useless">
             <p>How dare you blame {person}! You had to blame someone, and you chose {person}? Appalling.</p>
             <button onClick={handleOne}>I'm sorry! I didn't know...</button>
             <button onClick={handleTwo}>This isn't right. I'm not following directions.</button>

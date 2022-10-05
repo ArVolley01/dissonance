@@ -7,7 +7,7 @@ const NoSilly = ({ setter }) => {
     }
 
     return (
-        <div>
+        <div className="useless">
             <p>Blame yourself? No way! It's gotta be someone!</p>
             <button onClick={handleOne}>Ok, I'll try again</button>
         </div>

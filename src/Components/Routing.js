@@ -8,7 +8,7 @@ const Routing = () => {
     const [comp, setComp] = useState(<></>)
 
     useEffect(() => {
-        setComp(<PuzzleThree setter={setComp} />)
+        setComp(<Beginning setter={setComp} />)
     }, [])
 
 

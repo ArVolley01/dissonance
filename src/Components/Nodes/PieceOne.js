@@ -10,7 +10,7 @@ const PieceOne = ({ setter }) => {
     }
 
     return (
-        <div>
+        <div className="congrats">
             <p>So, you like to play games, huh? This is only the first piece of the puzzle. You'll never figure it all out.</p>
             <button onClick={handleOne}>Wait, what?</button>
             <button onClick={handleTwo}>Something has changed.</button>

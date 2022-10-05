@@ -16,7 +16,7 @@ const YesNeed = ({ setter }) => {
     }
 
     return (
-        <div>
+        <div className="action">
             <p>You want others to know you blame yourself. Why? There's no reason for that. Let me make sure you want this.</p>
             <button onFocus={scramble} id="piece1" onMouseEnter={scramble} onClick={handleTwo}>I want this.</button>
             <button onClick={handleOne}>You're right, I should stop</button>
